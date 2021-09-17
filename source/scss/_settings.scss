@@ -1,0 +1,72 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  height: 100%;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-dove-gray;
+  background-color: $color-white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  overflow: hidden;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1575px;
+  padding: 0 80px;
+  width: 100%;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@include tablet {
+  .container {
+    padding: 0 25px;
+  }
+}
+
+@include mobile {
+  .container {
+    padding: 0 15px;
+  }
+}
