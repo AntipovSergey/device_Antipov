@@ -1,0 +1,206 @@
+.promo {
+  background-image: url("../img/promo-bg.jpg");
+  background-size: cover;
+}
+
+.promo__container {
+  position: relative;
+  padding-top: 316px;
+  padding-bottom: 276px;
+  background-image: url("../../img/promo-img.png"), url("../img/icons/promo-mask.svg");
+  background-size: 705px 515px, 1920px 891px;
+  background-position: 99.5% 71%, 50% 36%;
+  background-repeat: no-repeat;
+
+  @media (max-width: 1345px) {
+    background-image: url("../../img/promo-img.png"), url("../img/icons/tablet-mask.svg");
+    background-size: 705px 515px, 770px 563px;
+    background-position: 130.5% 34%, 125% 10%;
+  }
+
+  @media (max-width: 1150px) {
+    background-image: url("../../img/promo-img.png"), url("../img/icons/tablet-mask.svg");
+    background-size: 600px 438px, 770px 563px;
+    background-position: 130.5% 27%, 125% 10%;
+  }
+}
+
+.promo__content {
+  max-width: 51%;
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.promo__descr {
+  position: relative;
+  margin: 0;
+  margin-bottom: 44px;
+  padding-left: 95px;
+  font-size: 22px;
+  line-height: 34px;
+  color: $color-white;
+  text-transform: lowercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: 0;
+    width: 66px;
+    height: 2px;
+    background-color: $color-white;
+  }
+}
+
+.promo__button {
+  margin-left: 95px;
+  padding: 17px 45px 18px 45px;
+  background-color: $color-dodger-blue;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  transition: all ease-in-out 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $color-white;
+    color: $color-dodger-blue;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+.promo__button--mobile {
+  display: none;
+}
+
+.promo__scroll {
+  position: absolute;
+  bottom: 129px;
+  left: 42px;
+  transform: rotate(-90deg);
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-white;
+  opacity: 0.5;
+  transition: all ease-in-out 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+@include tablet {
+  .promo__container {
+    padding-top: 189px;
+    padding-bottom: 163px;
+    padding-left: 87px;
+    padding-right: 87px;
+    background-image: url("../../img/promo-img.png"), url("../img/icons/qwe.svg");
+    background-size: 465px 340px, 330px 466px;
+    background-position: 130.5% 33%, 100.5% 0%;
+
+    @media (max-width: 800px) {
+      background-position: 168.5% 33%, 100.5% 0%;
+    }
+  }
+
+  .promo__content {
+    max-width: 72.5%;
+  }
+
+  .promo__title {
+    margin-bottom: 27px;
+    font-size: 60px;
+    line-height: 70px;
+
+    @media (max-width: 965px) {
+      max-width: 332px;
+    }
+  }
+
+  .promo__descr {
+    margin-bottom: 56px;
+    padding-left: 52px;
+    font-size: 18px;
+    line-height: 156.8%;
+
+    &::before {
+      left: 4px;
+      width: 33px;
+    }
+  }
+
+  .promo__button {
+    margin-left: 52px;
+    padding: 19px 31px 17px;
+  }
+
+  .promo__scroll {
+    display: none;
+  }
+}
+
+@include mobile {
+  .promo__container {
+    padding-top: 286px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-image: url("../../img/promo-img.png"), url("../img/icons/qwer.svg");
+    background-size: 301px 220px, 173px 437px;
+    background-position: 130.5% 22%, 100.5% 0%;
+
+    @media (min-width: 500px) {
+      background-position: 120.5% 22%, 100.5% 0%;
+    }
+  }
+
+  .promo__content {
+    max-width: 100%;
+  }
+
+  .promo__title {
+    margin-bottom: 26px;
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo__descr {
+    margin-bottom: 43px;
+    padding-left: 51px;
+    font-size: 16px;
+
+    &::before {
+      left: 3px;
+      top: 16px;
+    }
+
+    @media (min-width: 350px) {
+      max-width: 90%;
+    }
+  }
+
+  .promo__button {
+    display: none;
+  }
+
+  .promo__button--mobile {
+    display: block;
+    margin-left: 3px;
+    padding: 19px 32px 18px;
+  }
+}

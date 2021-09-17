@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .main-header__container {
@@ -33,6 +34,21 @@
   display: flex;
   align-items: center;
   line-height: 18px;
+  color: $color-dodger-blue;
+  transition: all ease-in-out 0.3s;
+
+  &:hover span {
+    color: $color-dodger-blue;
+    transition: all ease-in-out 0.3s;
+  }
+
+  &:hover {
+    color: $color-white;
+    transition: all ease-in-out 0.3s;
+  }
+}
+
+.main-header__link span {
   color: $color-white;
 }
 

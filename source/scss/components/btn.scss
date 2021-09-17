@@ -12,6 +12,15 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  transition: all ease-in-out 0.3s;
+}
+
+.btn--header:hover,
+.btn--header:focus,
+.btn--header:active {
+  border-color: $color-dodger-blue;
+  background-color: $color-dodger-blue;
+  transition: all ease-in-out 0.3s;
 }
 
 @include tablet {
