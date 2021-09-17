@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  color: $color-white;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+}
+
+@include tablet {
+  .btn--header {
+    display: none;
+  }
+}
