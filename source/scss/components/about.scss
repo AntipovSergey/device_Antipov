@@ -1,0 +1,142 @@
+.about__container {
+  padding: 109px 202px 110px 202px;
+}
+
+.about__content {
+  position: relative;
+  padding-left: 180px;
+  padding-right: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: -30px;
+    background-image: url("../img/about-img.png");
+    width: 317px;
+    height: 312px;
+    background-repeat: no-repeat;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about__descr-first {
+  margin: 0;
+  margin-bottom: 25px;
+  line-height: 21.5px;
+}
+
+.about__descr-second {
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: 21.5px;
+
+  &--tablet {
+    display: none;
+  }
+}
+
+.about__link {
+  position: relative;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  max-width: 180px;
+  border: 1px solid $color-dodger-blue;
+  color: $color-dodger-blue;
+  z-index: 100;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-dodger-blue;
+    color: $color-white;
+  }
+}
+
+@include tablet {
+  .about__container {
+    padding: 55px 25px 83px 25px;
+  }
+
+  .about__content {
+    padding-left: 187px;
+    padding-right: 3px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -2px;
+      left: -26px;
+      background-image: url("../img/about-tablet.png");
+      width: 362px;
+      height: 356px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .about__descr-first {
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+
+  .about__descr-second {
+    display: none;
+
+    &--tablet {
+      display: block;
+      margin-bottom: 40px;
+      line-height: 22px;
+    }
+  }
+
+  .about__span {
+    display: none;
+  }
+}
+
+@include mobile {
+  @include tablet {
+    .about__container {
+      padding: 55px 15px 83px 15px;
+    }
+
+    .about__content {
+      padding-left: 0;
+      padding-right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .about__title {
+      margin-bottom: 22px;
+      font-size: 28px;
+    }
+
+    .about__descr-first {
+      margin-bottom: 40px;
+    }
+
+    .about__descr-second {
+      &--tablet {
+        margin-bottom: 28px;
+        line-height: 22px;
+      }
+    }
+  }
+}
