@@ -157,6 +157,32 @@
           </div>
         </div>
       </section>
+      <section class="questions">
+        <div class="container questions__container">
+          <div class="questions__wrapper">
+            <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
+            <p class="questions__descr">Мы проконсультируем Вас бесплатно</p>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="questions__form form">
+              <div class="form__first">
+                <label for="name">
+                  <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
+                </label>
+                <label for="tel">
+                  <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+                </label>
+                <textarea class="form__text" name="text" id="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <div class="form__second">
+                <button class="form__button btn btn-reset">Задать вопрос</button>
+                <div class="form__checkbox-wrapper">
+                  <input class="form__checkbox" type="checkbox" name="check" id="check" checked>
+                  <label class="form__checkbox-label" for="check">Я согласен на обработку  персональных данных</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
   <script src="js/vendor.js"></script>

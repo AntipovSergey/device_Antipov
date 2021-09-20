@@ -1,4 +1,4 @@
-.services__container {
+.services {
   background-color: $color-gable-green;
 }
 
@@ -112,7 +112,7 @@
 
 @include tablet {
   .services__wrapper {
-    padding: 53px 0 76px 0;
+    padding: 51px 0 79px 0;
   }
 
   .services__title {
@@ -177,66 +177,64 @@
 }
 
 @include mobile {
-  @include tablet {
-    .services__wrapper {
-      padding-top: 50px;
-      padding-bottom: 64px;
+  .services__wrapper {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+  .services__title {
+    margin-bottom: 42px;
+    padding-left: 10px;
+    max-width: 100%;
+    font-size: 28px;
+  }
+
+  .services__list {
+    padding-right: 1px;
+    gap: 30px;
+  }
+
+  .services__link {
+    height: 256px;
+  }
+
+  .services__item {
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-right: -1px;
     }
 
-    .services__title {
-      margin-bottom: 42px;
-      padding-left: 10px;
-      max-width: 100%;
-      font-size: 28px;
-    }
+    &:first-child .services__link {
+      background-image: url("../img/services-first-mobile.png");
 
-    .services__list {
-      padding-right: 1px;
-      gap: 30px;
-    }
-
-    .services__link {
-      height: 256px;
-    }
-
-    .services__item {
-      &:nth-child(2),
-      &:nth-child(3) {
-        margin-right: -1px;
-      }
-
-      &:first-child .services__link {
-        background-image: url("../img/services-first-mobile.png");
-
-        @media (resolution: 2dppx) {
-          background-image: url("../img/services-first@2x-mobile.png");
-        }
-      }
-
-      &:nth-child(2) .services__link {
-        background-image: url("../img/services-second-mobile.png");
-
-        @media (resolution: 2dppx) {
-          background-image: url("../img/services-second@2x-mobile.png");
-        }
-      }
-
-      &:nth-child(3) .services__link {
-        background-image: url("../img/services-third-mobile.png");
-
-        @media (resolution: 2dppx) {
-          background-image: url("../img/services-third@2x-mobile.png");
-        }
-      }
-
-      &:nth-child(3) .services__subtitle {
-        padding-top: 30px;
+      @media (resolution: 2dppx) {
+        background-image: url("../img/services-first@2x-mobile.png");
       }
     }
 
-    .services__subtitle {
-      padding-top: 20px;
-      padding-left: 35px;
+    &:nth-child(2) .services__link {
+      background-image: url("../img/services-second-mobile.png");
+
+      @media (resolution: 2dppx) {
+        background-image: url("../img/services-second@2x-mobile.png");
+      }
     }
+
+    &:nth-child(3) .services__link {
+      background-image: url("../img/services-third-mobile.png");
+
+      @media (resolution: 2dppx) {
+        background-image: url("../img/services-third@2x-mobile.png");
+      }
+    }
+
+    &:nth-child(3) .services__subtitle {
+      padding-top: 30px;
+    }
+  }
+
+  .services__subtitle {
+    padding-top: 20px;
+    padding-left: 35px;
   }
 }
