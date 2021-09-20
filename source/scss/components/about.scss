@@ -1,5 +1,5 @@
 .about__container {
-  padding: 109px 202px 110px 202px;
+  padding: 109px 202px 109px 202px;
 }
 
 .about__content {
@@ -63,7 +63,7 @@
 
 @include tablet {
   .about__container {
-    padding: 55px 25px 83px 25px;
+    padding: 55px 25px 84px 25px;
   }
 
   .about__content {
@@ -111,7 +111,7 @@
 @include mobile {
   @include tablet {
     .about__container {
-      padding: 55px 15px 83px 15px;
+      padding: 55px 15px 64px 15px;
     }
 
     .about__content {

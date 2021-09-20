@@ -1,6 +1,11 @@
 .promo {
   background-image: url("../img/promo-bg.jpg");
   background-size: cover;
+  background-color: $color-dove-gray;
+
+  @media (resolution: 2dppx) {
+    background-image: url("../img/promo-bg@2x.jpg");
+  }
 }
 
 .promo__container {
