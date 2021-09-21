@@ -14,19 +14,19 @@
   padding-bottom: 276px;
   background-image: url("../../img/promo-img.png"), url("../img/icons/promo-mask.svg");
   background-size: 705px 515px, 1920px 891px;
-  background-position: 99.5% 71%, 50% 36%;
+  background-position: 99.5% 258px, 50% -5px;
   background-repeat: no-repeat;
 
   @media (max-width: 1345px) {
     background-image: url("../../img/promo-img.png"), url("../img/icons/tablet-mask.svg");
-    background-size: 705px 515px, 770px 563px;
-    background-position: 130.5% 34%, 125% 10%;
+    background-size: 705px 515px, 870px 563px;
+    background-position: 130.5% 149px, 125% 50px;
   }
 
   @media (max-width: 1150px) {
     background-image: url("../../img/promo-img.png"), url("../img/icons/tablet-mask.svg");
     background-size: 600px 438px, 770px 563px;
-    background-position: 130.5% 27%, 125% 10%;
+    background-position: 130.5% 141px, 125% 30px;
   }
 }
 
@@ -75,6 +75,7 @@
   line-height: 19px;
   border: none;
   transition: all ease-in-out 0.3s;
+  max-width: 407px;
 
   &:hover,
   &:focus,
@@ -116,10 +117,10 @@
     padding-right: 87px;
     background-image: url("../../img/promo-img.png"), url("../img/icons/qwe.svg");
     background-size: 465px 340px, 330px 466px;
-    background-position: 130.5% 33%, 100.5% 0%;
+    background-position: 130.5% 112px, 100.5% 0%;
 
     @media (max-width: 800px) {
-      background-position: 168.5% 33%, 100.5% 0%;
+      background-position: 168.5% 112px, 100.5% 0%;
     }
   }
 
@@ -167,10 +168,10 @@
     padding-right: 15px;
     background-image: url("../../img/promo-img.png"), url("../img/icons/qwer.svg");
     background-size: 301px 220px, 173px 437px;
-    background-position: 130.5% 22%, 100.5% 0%;
+    background-position: 130.5% 92px, 100.5% 0%;
 
     @media (min-width: 500px) {
-      background-position: 120.5% 22%, 100.5% 0%;
+      background-position: 120.5% 92px, 100.5% 0%;
     }
   }
 

@@ -121,8 +121,14 @@
 }
 
 .form--popup .form__checkbox-wrapper {
+  position: relative;
   width: 100%;
   justify-content: flex-start;
+}
+
+.form--popup .form__checkbox-wrapper .js-validate-error-label {
+  left: 0;
+  top: -70%;
 }
 
 .form__checkbox {
@@ -153,6 +159,16 @@
 .form--popup .form__checkbox-label {
   margin-left: 15px;
   max-width: 338px;
+}
+
+.form--popup .form__label {
+  position: relative;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  right: 2px;
+  top: 70%;
 }
 
 @include tablet {

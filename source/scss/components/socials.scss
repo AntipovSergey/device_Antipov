@@ -15,10 +15,12 @@
 
 .socials__link {
   color: $color-silver;
+  transition: all ease-in-out 0.3s;
 
   &:hover,
   &:focus,
   &:active {
     color: $color-dodger-blue;
+    transition: all ease-in-out 0.3s;
   }
 }

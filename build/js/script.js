@@ -31,7 +31,7 @@ const sendForm = function(form) {
 }
 
 sendForm(questionsForm);
-sendForm(popupForm);
+// sendForm(popupForm);
 
 
 //Local storage
@@ -132,15 +132,46 @@ if(overlay) {
 };
 
 
-if(submit) {
-  submit.addEventListener('click', () => {
-    overlay.classList.toggle('overlay--shown');
-    popup.classList.toggle('popup--opened');
-  })
-};
+// if(submit) {
+//   submit.addEventListener('click', () => {
+//     overlay.classList.toggle('overlay--shown');
+//     popup.classList.toggle('popup--opened');
+//   })
+// };
 
 //Set focus
 const element = document.getElementById('popup__name');
 buttonOpen.addEventListener('click', () => {
   element.focus();
+});
+
+//Валидация формы popup
+new JustValidate('.popup__form', {
+  rules: {
+    checkbox: {
+      required: true,
+    },
+    tel: {
+      required: true,
+    },
+    name: {
+      required: true,
+    },
+  },
+
+  submitHandler: function (form, values, ajax) {
+
+    ajax({
+      url: 'https://echo.htmlacademy.ru/',
+      method: 'POST',
+      data: values,
+      async: true,
+      callback: function(response)  {
+        console.log(response)
+      }
+    });
+    form.reset();
+    overlay.classList.toggle('overlay--shown');
+    popup.classList.toggle('popup--opened');
+  },
 });

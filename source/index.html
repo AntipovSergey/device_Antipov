@@ -54,9 +54,9 @@
           <div class="promo__content">
             <h1 class="promo__title">Печатные платы</h1>
             <p class="promo__descr">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <button class="promo__button btn btn-reset" type="button">Получить бесплатную консультацию</button>
-            <button class="promo__button promo__button--mobile btn btn--promo btn-reset" type="button">Бесплатная консультация</button>
-            <a href="#" class="promo__scroll btn-reset">Скролл вниз</a>
+            <a href="#questions" class="promo__button btn">Получить бесплатную консультацию</a>
+            <a href="#questions" class="promo__button promo__button--mobile btn btn--promo">Бесплатная консультация</a>
+            <a href="#footer" class="promo__scroll btn-reset">Скролл вниз</a>
           </div>
         </div>
       </section>
@@ -157,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="container questions__container">
           <div class="questions__wrapper">
             <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
@@ -184,7 +184,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer" id="footer">
       <div class="container main-footer__container">
         <div class="main-footer__top">
           <div class="main-footer__first-column">
@@ -293,18 +293,18 @@
         </button>
         <form action="https://echo.htmlacademy.ru/" method="POST" class="popup__form form form--popup">
           <div class="form__first">
-            <label for="popup__name">
-              <input class="form__input" type="text" name="name" id="popup__name" placeholder="Имя" required minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
+            <label class="form__label" for="popup__name">
+              <input class="form__input" data-validate-field="name" type="text" name="name" id="popup__name" placeholder="Имя" minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
             </label>
-            <label for="popup__tel">
-              <input class="form__input" type="tel" name="tel" id="popup__tel" placeholder="Телефон" required>
+            <label class="form__label" for="popup__tel">
+              <input class="form__input" type="tel" data-validate-field="tel" name="tel" id="popup__tel" placeholder="Телефон">
             </label>
             <textarea class="form__text" name="text" id="popup__text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
           </div>
           <div class="form__second">
             <button class="form__button btn btn--popup btn-reset" type="submit">Отправить</button>
             <div class="form__checkbox-wrapper">
-              <input class="form__checkbox" type="checkbox" name="check" id="popup__check" required checked>
+              <input class="form__checkbox" type="checkbox" data-validate-field="checkbox" name="check" id="popup__check" checked>
               <label class="form__checkbox-label" for="popup__check">Я согласен на обработку  персональных данных</label>
             </div>
           </div>
