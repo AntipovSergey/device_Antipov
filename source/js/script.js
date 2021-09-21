@@ -35,3 +35,36 @@ window.addEventListener('DOMContentLoaded', function(){
     })
   }
 })
+
+
+//Аккордеон
+const accordeons = document.querySelectorAll('.main-footer__accordeon');
+
+if (accordeons) {
+  accordeons.forEach(el => {
+    el.addEventListener('click', (e) => {
+      const self = e.currentTarget;
+      const control = document.querySelector('.main-footer__accordeon-button');
+      const content = document.querySelector('.main-footer__accordeon-bottom');
+
+
+      // self.classList.toggle('is-open');
+      if (self.classList.contains('is-open')) {
+        self.classList.remove('is-open');
+      } else {
+        for (item of accordeons) {
+          item.classList.remove('is-open');
+        }
+        self.classList.add('is-open');
+      }
+
+      if (self.classList.contains('is-open')) {
+        control.setAttribute('aria-expanded', true);
+        content.setAttribute('aria-hidden', false);
+      } else {
+        control.setAttribute('aria-expanded', false);
+        content.setAttribute('aria-hidden', true);
+      }
+    });
+  });
+}
