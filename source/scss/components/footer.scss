@@ -398,4 +398,22 @@
     width: 16px;
     height: 2px;
   }
+
+  .main-footer__accordeon--nojs .main-footer__accordeon-bottom {
+    display: block;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-left: 25px;
+    padding-right: 21px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba($color: $color-corduroy, $alpha: 0.2);
+  }
+
+  .main-footer__accordeon--nojs .main-footer__accordeon-button {
+    display: none;
+  }
+
+  .main-footer__accordeon--nojs .main-footer__accordeon-top {
+    border-bottom: none;
+  }
 }

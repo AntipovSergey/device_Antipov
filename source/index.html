@@ -162,10 +162,10 @@
           <div class="questions__wrapper">
             <h2 class="questions__title">Остались вопросы? Задайте их нам!</h2>
             <p class="questions__descr">Мы проконсультируем Вас бесплатно</p>
-            <form action="https://echo.htmlacademy.ru" method="POST" class="questions__form form">
+            <form action="https://echo.htmlacademy.ru/" method="POST" class="questions__form form">
               <div class="form__first">
                 <label for="name">
-                  <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required>
+                  <input class="form__input" type="text" name="name" id="name" placeholder="Имя" required minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
                 </label>
                 <label for="tel">
                   <input class="form__input" type="tel" name="tel" id="tel" placeholder="Телефон" required>
@@ -173,9 +173,9 @@
                 <textarea class="form__text" name="text" id="text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__second">
-                <button class="form__button btn btn-reset">Задать вопрос</button>
+                <button class="form__button btn btn-reset" type="submit">Задать вопрос</button>
                 <div class="form__checkbox-wrapper">
-                  <input class="form__checkbox" type="checkbox" name="check" id="check" checked>
+                  <input class="form__checkbox" type="checkbox" name="check" id="check" required checked>
                   <label class="form__checkbox-label" for="check">Я согласен на обработку  персональных данных</label>
                 </div>
               </div>
@@ -188,7 +188,7 @@
       <div class="container main-footer__container">
         <div class="main-footer__top">
           <div class="main-footer__first-column">
-            <a href="#" class="main-footer__logo">
+            <a class="main-footer__logo">
               <img src="img/icons/logo-footer.svg" width="216" height="52" alt="Логотип компании Smart Device">
             </a>
             <p class="main-footer__descr">1999-2018 SD Service Devices</p>
@@ -217,10 +217,10 @@
             </ul>
           </div>
           <div class="main-footer__second-column">
-            <div class="main-footer__navigation main-footer__accordeon">
-              <div class="main-footer__accordeon-top">
+            <div class="main-footer__navigation main-footer__accordeon main-footer__accordeon--nojs">
+              <div class="main-footer__accordeon-top" tabindex="0">
                 <h2 class="main-footer__subtitle">Разделы сайта</h2>
-                <button class="main-footer__accordeon-button btn-reset" type="button" aria-expanded="false"></button>
+                <button class="main-footer__accordeon-button btn-reset" type="button" aria-expanded="false" tabindex="-1"></button>
               </div>
               <div class="main-footer__accordeon-bottom main-footer__accordeon-bottom--navigation" aria-hidden="true">
                 <ul class="main-footer__first-list">
@@ -250,10 +250,10 @@
                 </ul>
               </div>
             </div>
-            <div class="main-footer__contacts main-footer__accordeon">
-              <div class="main-footer__accordeon-top">
+            <div class="main-footer__contacts main-footer__accordeon main-footer__accordeon--nojs">
+              <div class="main-footer__accordeon-top" tabindex="0">
                 <h2 class="main-footer__subtitle">Наш офис</h2>
-                <button class="main-footer__accordeon-button btn-reset" type="button" aria-expanded="false"></button>
+                <button class="main-footer__accordeon-button btn-reset" type="button" aria-expanded="false" tabindex="-1"></button>
               </div>
               <div class="main-footer__accordeon-bottom" aria-hidden="true">
                 <p class="main-footer__address">г. Мытищи, Олимпийский проспект, д.10</p>
@@ -282,6 +282,35 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="popup">
+        <h2 class="popup__title">Закажите звонок</h2>
+        <p class="popup__descr">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <button class="popup__close btn-reset" type="button" aria-label="Закрыть всплывающее окно">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form action="https://echo.htmlacademy.ru/" method="POST" class="popup__form form form--popup">
+          <div class="form__first">
+            <label for="popup__name">
+              <input class="form__input" type="text" name="name" id="popup__name" placeholder="Имя" required minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
+            </label>
+            <label for="popup__tel">
+              <input class="form__input" type="tel" name="tel" id="popup__tel" placeholder="Телефон" required>
+            </label>
+            <textarea class="form__text" name="text" id="popup__text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+          </div>
+          <div class="form__second">
+            <button class="form__button btn btn--popup btn-reset" type="submit">Отправить</button>
+            <div class="form__checkbox-wrapper">
+              <input class="form__checkbox" type="checkbox" name="check" id="popup__check" required checked>
+              <label class="form__checkbox-label" for="popup__check">Я согласен на обработку  персональных данных</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
