@@ -10,8 +10,8 @@
   background-color: rgba($color: $color-black, $alpha: 0.7);
   cursor: pointer;
   z-index: 100;
+}
 
-  &--shown {
-    display: flex;
-  }
+.overlay--shown {
+  display: flex;
 }

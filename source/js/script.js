@@ -12,8 +12,7 @@ if(selectorPopup) {
 };
 
 //Отправка формы
-const questionsForm = document.querySelector('.questions__form');
-const popupForm = document.querySelector('.popup__form');
+const questionsForm = document.querySelector('#questions-form');
 
 const sendForm = function(form) {
   if(form) {
@@ -31,8 +30,6 @@ const sendForm = function(form) {
 }
 
 sendForm(questionsForm);
-// sendForm(popupForm);
-
 
 //Local storage
 window.addEventListener('DOMContentLoaded', function(){
@@ -56,7 +53,6 @@ window.addEventListener('DOMContentLoaded', function(){
     })
   }
 })
-
 
 //Аккордеон
 const accordeons = document.querySelectorAll('.main-footer__accordeon');
@@ -131,22 +127,17 @@ if(overlay) {
   });
 };
 
-
-// if(submit) {
-//   submit.addEventListener('click', () => {
-//     overlay.classList.toggle('overlay--shown');
-//     popup.classList.toggle('popup--opened');
-//   })
-// };
-
 //Set focus
 const element = document.getElementById('popup__name');
-buttonOpen.addEventListener('click', () => {
-  element.focus();
-});
+if(element) {
+  buttonOpen.addEventListener('click', () => {
+    element.focus();
+  });
+};
 
 //Валидация формы popup
-new JustValidate('.popup__form', {
+const popupForm = document.querySelector('#popup-form');
+new JustValidate('#popup-form', {
   rules: {
     checkbox: {
       required: true,

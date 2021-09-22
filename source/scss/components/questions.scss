@@ -79,7 +79,7 @@
   }
 }
 
-.questions__title {
+.questions h2 {
   margin: 0;
   margin-bottom: 9px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -89,7 +89,7 @@
   color: $color-white;
 }
 
-.questions__descr {
+.questions p {
   padding-left: 4px;
   margin: 0;
   margin-bottom: 53px;
@@ -128,13 +128,13 @@
     }
   }
 
-  .questions__title {
+  .questions h2 {
     margin-bottom: 15px;
     font-size: 32px;
     line-height: 140.62%;
   }
 
-  .questions__descr {
+  .questions p {
     margin-bottom: 56px;
   }
 }
@@ -144,13 +144,13 @@
     padding: 29px 15px 43px 15px;
   }
 
-  .questions__title {
+  .questions h2 {
     padding-right: 10px;
     margin-bottom: 13px;
     font-size: 28px;
   }
 
-  .questions__descr {
+  .questions p {
     padding: 0;
     margin-bottom: 26px;
   }

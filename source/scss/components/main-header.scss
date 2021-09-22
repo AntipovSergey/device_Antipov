@@ -58,6 +58,7 @@
 
 .main-header__mail--tablet {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 20px;
 }
 
@@ -67,6 +68,7 @@
 
 .main-header__phone--tablet {
   display: inline-block;
+  vertical-align: middle;
   margin-right: 16px;
 }
 
@@ -125,7 +127,7 @@
     margin-left: 1px;
   }
 
-  .main-header__img {
+  .main-header__logo img {
     width: 38px;
     height: 38px;
   }

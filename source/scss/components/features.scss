@@ -115,7 +115,7 @@
   display: none;
 }
 
-.features__subtitle {
+.features__item h3 {
   margin: 0;
   margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -123,7 +123,7 @@
   line-height: 34px;
 }
 
-.features__descr {
+.features__item p {
   margin: 0;
   color: $color-dove-gray;
 }
@@ -184,15 +184,15 @@
       margin-bottom: 11px;
     }
 
-    &:first-child .features__subtitle {
+    &:first-child h3 {
       margin-bottom: 8px;
     }
 
-    &:nth-child(2) .features__subtitle {
+    &:nth-child(2) h3 {
       margin-bottom: 9px;
     }
 
-    &:nth-child(4) .features__subtitle {
+    &:nth-child(4) h3 {
       margin-bottom: 6px;
     }
   }
@@ -260,24 +260,24 @@
       margin-bottom: 11px;
     }
 
-    &:first-child .features__subtitle {
+    &:first-child h3 {
       margin-bottom: 8px;
     }
 
-    &:nth-child(2) .features__subtitle {
+    &:nth-child(2) h3 {
       margin-bottom: 9px;
     }
 
-    &:nth-child(3) .features__subtitle {
+    &:nth-child(3) h3 {
       margin-bottom: 18px;
     }
 
-    &:nth-child(4) .features__subtitle {
+    &:nth-child(4) h3 {
       margin-bottom: 17px;
     }
   }
 
-  .features__subtitle {
+  .features__item h3 {
     font-size: 20px;
     line-height: 140.62%;
   }

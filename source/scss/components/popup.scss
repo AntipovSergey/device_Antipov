@@ -10,7 +10,7 @@
   z-index: 100;
 }
 
-.popup__title {
+.popup h2 {
   margin: 0;
   margin-bottom: 11px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -20,7 +20,7 @@
   color: $color-white;
 }
 
-.popup__descr {
+.popup p {
   padding-right: 10px;
   margin: 0;
   margin-bottom: 33px;

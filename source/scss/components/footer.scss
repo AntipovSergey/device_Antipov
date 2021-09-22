@@ -18,7 +18,7 @@
   margin-bottom: 53px;
 }
 
-.main-footer__descr {
+.main-footer__first-column p {
   display: none;
   margin: 0;
   font-size: 13px;
@@ -58,7 +58,7 @@
 }
 
 
-.main-footer__subtitle {
+.main-footer h2 {
   margin: 0;
   margin-bottom: 26px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -125,7 +125,7 @@
   margin-left: auto;
 }
 
-.main-footer__address {
+.main-footer__accordeon-bottom p {
   margin: 0;
   padding-right: 2px;
   font-size: 15px;
@@ -185,16 +185,16 @@
   }
 }
 
-.main-footer__copyright {
+.main-footer__bottom-wrapper p:first-of-type {
   margin: 0;
 }
 
-.main-footer__dates {
+.main-footer__bottom-wrapper p:nth-of-type(2n + 2) {
   margin: 0;
   margin-left: 74px;
 }
 
-.main-footer__confidential {
+.main-footer__bottom-wrapper p:nth-of-type(3n + 3) {
   margin: 0;
   margin-left: 142px;
 
@@ -203,7 +203,7 @@
   }
 }
 
-.main-footer__developed {
+.main-footer__bottom-wrapper p:last-of-type {
   margin: 0;
   margin-left: auto;
 }
@@ -234,7 +234,7 @@
     margin: 0;
   }
 
-  .main-footer__descr {
+  .main-footer__first-column p {
     display: block;
     padding-top: 3px;
     padding-left: 16px;
@@ -263,7 +263,7 @@
     padding-right: 7px;
   }
 
-  .main-footer__address {
+  .main-footer__accordeon-bottom p {
     font-size: 15px;
     line-height: 25px;
   }
@@ -280,15 +280,19 @@
     line-height: 24px;
   }
 
-  .main-footer__copyright {
+  .main-footer__bottom-wrapper p:first-of-type {
     display: none;
   }
 
-  .main-footer__dates {
+  .main-footer__bottom-wrapper p:nth-of-type(2n) {
     display: none;
   }
 
-  .main-footer__confidential {
+  .main-footer__bottom-wrapper p:nth-of-type(0n + 4) {
+    display: block;
+  }
+
+  .main-footer__bottom-wrapper p:nth-of-type(3n) {
     margin: 0;
   }
 }
@@ -312,7 +316,7 @@
     margin-bottom: 27px;
   }
 
-  .main-footer__descr {
+  .main-footer__first-column p {
     margin-bottom: 31px;
     padding: 0;
   }
@@ -357,7 +361,7 @@
     border-top: none;
   }
 
-  .main-footer__subtitle {
+  .main-footer h2 {
     margin: 0;
   }
 
@@ -384,11 +388,11 @@
     padding-bottom: 24px;
   }
 
-  .main-footer__confidential {
+  .main-footer__bottom-wrapper p:nth-of-type(3n + 3) {
     margin-bottom: 21px;
   }
 
-  .main-footer__developed {
+  .main-footer__bottom-wrapper p:last-of-type {
     margin: 0;
   }
 
