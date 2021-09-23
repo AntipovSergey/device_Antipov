@@ -1,6 +1,6 @@
 //Маска для поля tel
-let selectorForm = document.getElementById('tel');
-let selectorPopup = document.getElementById('popup__tel');
+let selectorForm = document.querySelector('#tel');
+let selectorPopup = document.querySelector('#popup__tel');
 let im = new Inputmask('+7 (999) 999-99-99');
 
 if(selectorForm) {
@@ -33,12 +33,12 @@ sendForm(questionsForm);
 
 //Local storage
 window.addEventListener('DOMContentLoaded', function(){
-  const questionsFormTel = document.getElementById('tel');
-  const questionsFormName = document.getElementById('name');
-  const questionsFormText = document.getElementById('text');
-  const popupFormTel = document.getElementById('popup__tel');
-  const popupFormName = document.getElementById('popup__name');
-  const popupFormText = document.getElementById('popup__text');
+  const questionsFormTel = document.querySelector('#tel');
+  const questionsFormName = document.querySelector('#name');
+  const questionsFormText = document.querySelector('#text');
+  const popupFormTel = document.querySelector('#popup__tel');
+  const popupFormName = document.querySelector('#popup__name');
+  const popupFormText = document.querySelector('#popup__text');
   const buttons = document.querySelectorAll('.form__button')
   if(buttons) {
     buttons.forEach(button => {
@@ -128,7 +128,7 @@ if(overlay) {
 };
 
 //Set focus
-const element = document.getElementById('popup__name');
+const element = document.querySelector('#popup__name');
 if(element) {
   buttonOpen.addEventListener('click', () => {
     element.focus();

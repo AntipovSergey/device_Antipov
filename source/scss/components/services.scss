@@ -73,7 +73,7 @@
     }
   }
 
-  &:nth-child(2) .services__link {
+  &:nth-child(0n + 2) .services__link {
     background-image: url("../img/services-second.png");
 
     @media (resolution: 2dppx) {
@@ -81,7 +81,7 @@
     }
   }
 
-  &:nth-child(3) .services__link {
+  &:nth-child(0n + 3) .services__link {
     background-image: url("../img/services-third.png");
 
     @media (resolution: 2dppx) {
@@ -145,8 +145,8 @@
   }
 
   .services__item {
-    &:nth-child(2),
-    &:nth-child(3) {
+    &:nth-child(0n + 2),
+    &:nth-child(0n + 3) {
       margin-right: -4px;
     }
 
@@ -158,7 +158,7 @@
       }
     }
 
-    &:nth-child(2) .services__link {
+    &:nth-child(0n + 2) .services__link {
       background-image: url("../img/services-second-tablet.png");
 
       @media (resolution: 2dppx) {
@@ -166,7 +166,7 @@
       }
     }
 
-    &:nth-child(3) .services__link {
+    &:nth-child(0n + 3) .services__link {
       background-image: url("../img/services-third-tablet.png");
 
       @media (resolution: 2dppx) {
@@ -174,7 +174,7 @@
       }
     }
 
-    &:nth-child(3) h3 {
+    &:nth-child(0n + 3) h3 {
       padding-top: 49px;
     }
   }
@@ -212,8 +212,8 @@
   }
 
   .services__item {
-    &:nth-child(2),
-    &:nth-child(3) {
+    &:nth-child(0n + 2),
+    &:nth-child(0n + 3) {
       margin-right: -1px;
     }
 
@@ -225,7 +225,7 @@
       }
     }
 
-    &:nth-child(2) .services__link {
+    &:nth-child(0n + 2) .services__link {
       background-image: url("../img/services-second-mobile.png");
 
       @media (resolution: 2dppx) {
@@ -233,7 +233,7 @@
       }
     }
 
-    &:nth-child(3) .services__link {
+    &:nth-child(0n + 3) .services__link {
       background-image: url("../img/services-third-mobile.png");
 
       @media (resolution: 2dppx) {
@@ -241,7 +241,7 @@
       }
     }
 
-    &:nth-child(3) h3 {
+    &:nth-child(0n + 3) h3 {
       padding-top: 30px;
     }
   }
