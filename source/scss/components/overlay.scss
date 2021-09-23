@@ -15,3 +15,10 @@
 .overlay--shown {
   display: flex;
 }
+
+.overlay--shown .main-header__logo {
+  position: fixed;
+  top: 332px;
+  left: 49%;
+  transform: translateX(-45%);
+}
