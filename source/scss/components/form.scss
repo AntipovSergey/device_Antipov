@@ -35,7 +35,7 @@
   }
 
   &:hover {
-    border: 1px solid $color-dodger-blue;
+    border: 1px solid $color-white;
   }
 
   &:focus:invalid {
@@ -68,6 +68,10 @@
   outline: none;
   color: $color-black;
   resize: none;
+
+  &:hover {
+    border: 1px solid $color-white;
+  }
 
   &:focus {
     border: 1px solid $color-white;
