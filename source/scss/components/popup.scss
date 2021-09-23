@@ -1,13 +1,14 @@
 .popup {
   display: none;
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px 39px;
   width: 490px;
   background-color: $color-dodger-blue;
   z-index: 100;
+  cursor: auto;
 }
 
 .popup h2 {
@@ -18,6 +19,7 @@
   font-size: 28px;
   line-height: 140.62%;
   color: $color-white;
+  cursor: default;
 }
 
 .popup p {
@@ -27,6 +29,7 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-white;
+  cursor: default;
 }
 
 .popup__close {

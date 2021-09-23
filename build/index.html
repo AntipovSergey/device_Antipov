@@ -45,7 +45,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-header__button btn btn--header btn-reset" type="button">Заказать звонок</button>
+        <a href="popup.html" class="main-header__button btn btn--header">Заказать звонок</a>
       </div>
     </header>
     <main>
@@ -71,7 +71,7 @@
               <svg class="features__icon features__icon--tablet" width="30" height="36"  xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#stopwatch-tablet"></use>
               </svg>
-              <h3>Оперативные сроки </h3>
+              <h3>Оперативные сроки</h3>
               <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
             </li>
             <li class="features__item">
@@ -277,10 +277,10 @@
       </div>
       <div class="main-footer__bottom">
         <div class="container main-footer__bottom-wrapper">
-          <p>Все права защищены</p>
+          <a href="#">Все права защищены</a>
           <p>1999-2018 SD Service Devices</p>
-          <p>Условия конфиденциальности</p>
-          <p>Developed by wow studio </p>
+          <a href="#">Условия конфиденциальности</a>
+          <a href="#">Developed by wow studio </a>
         </div>
       </div>
     </footer>
@@ -288,11 +288,6 @@
       <div class="popup">
         <h2>Закажите звонок</h2>
         <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <button class="popup__close btn-reset" type="button" aria-label="Закрыть всплывающее окно">
-          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#close"></use>
-          </svg>
-        </button>
         <div class="popup__form form form--popup">
           <form action="https://echo.htmlacademy.ru/" method="POST" id="popup-form">
             <div class="form__first">
@@ -313,6 +308,11 @@
             </div>
           </form>
         </div>
+        <button class="popup__close btn-reset" type="button" aria-label="Закрыть всплывающее окно">
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>

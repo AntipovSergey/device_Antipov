@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Author: Sergey Antipov, Category: Computers, Length: 1 page">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/pTMono-Regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/roboto-Medium.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/robotoCondensed-Bold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/robotoCondensed-Regular.woff2" as="font" crossorigin>
+</head>
+<body>
+  <main>
+    <div class="site-container">
+      <div class="overlay overlay--shown">
+        <div class="popup popup--opened ">
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <div class="popup__form form form--popup">
+            <form action="https://echo.htmlacademy.ru/" method="POST" id="popup-form">
+              <div class="form__first">
+                <label for="popup__name">
+                  <input data-validate-field="name" type="text" name="name" id="popup__name" placeholder="Имя" minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
+                </label>
+                <label for="popup__tel">
+                  <input type="tel" data-validate-field="tel" name="tel" id="popup__tel" placeholder="Телефон">
+                </label>
+                <textarea name="text" id="popup__text" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+              </div>
+              <div class="form__second">
+                <button class="form__button btn btn--popup btn-reset" type="submit">Отправить</button>
+                <div class="form__checkbox-wrapper">
+                  <input type="checkbox" data-validate-field="checkbox" name="check" id="popup__check" checked>
+                  <label for="popup__check">Я согласен на обработку  персональных данных</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <button class="popup__close btn-reset" type="button" aria-label="Закрыть всплывающее окно">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -96,11 +96,14 @@ const buttonClose = document.querySelector('.popup__close');
 const popup = document.querySelector('.popup');
 const overlay = document.querySelector('.overlay');
 const submit = document.querySelector('.btn--popup');
+const body = document.body;
 
 if(buttonOpen) {
-  buttonOpen.addEventListener('click', () => {
+  buttonOpen.addEventListener('click', (e) => {
+    e.preventDefault();
     overlay.classList.toggle('overlay--shown');
     popup.classList.toggle('popup--opened');
+    body.classList.add('disable-scroll');
   })
 };
 
@@ -108,6 +111,7 @@ if(buttonClose) {
   buttonClose.addEventListener('click', () => {
     overlay.classList.remove('overlay--shown');
     popup.classList.remove('popup--opened');
+    body.classList.remove('disable-scroll');
   })
 };
 
@@ -115,6 +119,7 @@ document.addEventListener('keydown', (evt) => {
   if(evt.keyCode === 27) {
     overlay.classList.remove('overlay--shown');
     popup.classList.remove('popup--opened');
+    body.classList.remove('disable-scroll');
   }
 })
 
@@ -123,6 +128,7 @@ if(overlay) {
     if (evt.target === overlay) {
       overlay.classList.remove('overlay--shown');
       popup.classList.remove('popup--opened');
+      body.classList.remove('disable-scroll');
     }
   });
 };

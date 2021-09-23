@@ -8,7 +8,7 @@
 .socials__item {
   margin-right: 16px;
 
-  &:nth-child(3n + 3) {
+  &:last-child {
     margin-right: 0;
   }
 }

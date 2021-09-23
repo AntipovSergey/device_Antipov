@@ -1,10 +1,10 @@
 .promo {
-  background-image: url("../img/promo-bg.webp");
+  background-image: url("../img/promo-bg.jpg");
   background-size: cover;
   background-color: $color-dove-gray;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-bg@2x.webp");
+    background-image: url("../img/promo-bg@2x.jpg");
   }
 }
 

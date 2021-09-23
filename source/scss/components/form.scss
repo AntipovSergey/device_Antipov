@@ -139,7 +139,12 @@
   appearance: none;
   width: 16px;
   height: 16px;
+  cursor: pointer;
   background-image: url("../img/icons/checkbox-square.svg");
+
+  &:hover {
+    outline: 1px solid $color-black;
+  }
 
   &:checked {
     background-image: url("../img/icons/checkbox-pressed.svg");
@@ -155,11 +160,13 @@
   color: $color-white;
   opacity: 0.8;
   max-width: 230px;
+  cursor: pointer;
 }
 
 .form--popup .form__checkbox-wrapper label {
   margin-left: 15px;
   max-width: 338px;
+  cursor: pointer;
 }
 
 .form--popup .form__first label {
@@ -170,6 +177,13 @@
   position: absolute;
   right: 2px;
   top: 70%;
+}
+
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  margin-left: -20px;
 }
 
 @include tablet {
