@@ -16,9 +16,9 @@
   display: flex;
 }
 
-.overlay--shown .main-header__logo {
+.overlay--shown .overlay__logo {
   position: fixed;
-  top: 332px;
+  top: 44px;
   left: 49%;
   transform: translateX(-45%);
 }

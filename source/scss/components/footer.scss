@@ -211,6 +211,16 @@
   margin-left: auto;
 }
 
+.main-footer__bottom-wrapper a {
+  transition: all ease-in-out 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-dodger-blue;
+  }
+}
+
 @include tablet {
   .main-footer__container {
     padding-top: 19px;
