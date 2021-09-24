@@ -131,6 +131,10 @@
                       <path d="M1 8.5L5 4.5L1 0.5" stroke="currentColor" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                  <picture>
+                    <source srcset="img/services-first.webp 1x, img/services-first@2x.webp 2x" type="image/webp">
+                    <img class="services__img" src="img/services-first.png" srcset="img/services-first@2x.png" width="370" height="620" alt="Производство печатных плат">
+                  </picture>
                 </a>
               </li>
               <li class="services__item">
@@ -141,6 +145,10 @@
                       <path d="M1 8.5L5 4.5L1 0.5" stroke="currentColor" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                  <picture>
+                    <source srcset="img/services-second.webp 1x, img/services-second@2x.webp 2x" type="image/webp">
+                    <img class="services__img" src="img/services-second.png" srcset="img/services-second@2x.png" width="370" height="620" alt="Монтаж печатных плат">
+                  </picture>
                 </a>
               </li>
               <li class="services__item">
@@ -151,6 +159,10 @@
                       <path d="M1 8.5L5 4.5L1 0.5" stroke="currentColor" stroke-linejoin="round"/>
                     </svg>
                   </div>
+                  <picture>
+                    <source srcset="img/services-third.webp 1x, img/services-third@2x.webp 2x" type="image/webp">
+                    <img class="services__img" src="img/services-third.png" srcset="img/services-third@2x.png" width="370" height="620" alt="Комплектующие для светотехники">
+                  </picture>
                 </a>
               </li>
             </ul>
@@ -166,7 +178,7 @@
               <form action="https://echo.htmlacademy.ru/" method="POST" id="questions-form">
                 <div class="form__first">
                   <label for="name">
-                    <input type="text" name="name" id="name" placeholder="Имя" required minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
+                    <input type="text" name="name" id="name" placeholder="Имя" required minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё\s]+">
                   </label>
                   <label for="tel">
                     <input type="tel" name="tel" id="tel" placeholder="Телефон" required>
@@ -292,7 +304,7 @@
           <form action="https://echo.htmlacademy.ru/" method="POST" id="popup-form">
             <div class="form__first">
               <label for="popup__name">
-                <input data-validate-field="name" type="text" name="name" id="popup__name" placeholder="Имя" minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё]+">
+                <input data-validate-field="name" type="text" name="name" id="popup__name" placeholder="Имя" minlength="1" maxlength="25" pattern="[A-Za-zА-Яа-яЁё\s]+">
               </label>
               <label for="popup__tel">
                 <input type="tel" data-validate-field="tel" name="tel" id="popup__tel" placeholder="Телефон">

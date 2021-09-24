@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.main-header__logo {
+  display: block;
+  margin-right: 20px;
+  flex: 0 0 auto;
+}
+
 .main-header__list {
   margin: 0;
   margin-left: auto;
@@ -20,6 +26,8 @@
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main-header__item:not(:last-child) {

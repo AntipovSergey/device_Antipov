@@ -14,11 +14,11 @@
 
 .overlay--shown {
   display: flex;
+  overflow-y: auto;
 }
 
 .overlay--shown .overlay__logo {
-  position: fixed;
-  top: 44px;
-  left: 49%;
-  transform: translateX(-45%);
+  position: absolute;
+  top: 0;
+  left: 0;
 }

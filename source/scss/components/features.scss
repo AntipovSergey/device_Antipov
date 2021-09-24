@@ -78,7 +78,7 @@
   background-color: $color-white;
   border: 1px solid $color-gallery;
   border-left: 3px solid $color-dodger-blue;
-  cursor: pointer;
+  cursor: default;
 
   &:nth-child(0n + 3) {
     padding-top: 44px;
