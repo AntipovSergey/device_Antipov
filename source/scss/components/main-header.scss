@@ -10,7 +10,7 @@
   padding-top: 33px;
   padding-bottom: 33px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .main-header__logo {
@@ -46,6 +46,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-items: end;
+  align-self: center;
   column-gap: 88px;
   row-gap: 5px;
 
