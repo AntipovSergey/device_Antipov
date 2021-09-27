@@ -1,5 +1,9 @@
 .about__container {
   padding: 109px 202px 109px 202px;
+
+  @media (max-width: 1300px) {
+    padding: 109px 127px;
+  }
 }
 
 .about__content {
